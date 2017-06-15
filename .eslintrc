@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "plugins": [
+    // "vue-libs",
+    "flowtype"
+  ],
+  "extends": [
+    // "plugin:vue-libs/recommended",
+    // "plugin:flowtype/recommended"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "window": false,
+    "expect": true,
+    "sinon": true,
+    "Blob": false,
+    "URL": false,
+    "__WEEX__": true
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "ignore",
+      "asyncArrow": "ignore"
+    }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-useless-escape": 0,
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1
+  }
+}
